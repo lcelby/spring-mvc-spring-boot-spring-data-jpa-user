@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>删除后数据</title>
+</head>
+<body>
+	<table cellpadding="10">
+		<tr>
+			<td>id</td>
+			<td>姓名</td>
+			<td>年龄</td>
+		</tr>
+
+		<tr th:each="user:${u}">
+			<td th:text="${user.id}">123</td>
+			<td th:text="${user.username}">aaa</td>
+			<td th:text="${user.age}">24</td>
+		</tr>
+
+	</table>
+
+</body>
+</html>

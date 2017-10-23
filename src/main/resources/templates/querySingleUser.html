@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>查询单个用户</title>
+</head>
+<body>
+	<h1>查询结果</h1>
+	<br />
+
+	<table cellpadding="10">
+		<tr>
+			<td>id</td>
+			<td>姓名</td>
+			<td>年龄</td>
+		</tr>
+		<tr>
+			<td th:text="${user.id}">123</td>
+			<td th:text="${user.username}">aaa</td>
+			<td th:text="${user.age}">1</td>
+		</tr>
+	</table>
+
+</body>
+</html>
